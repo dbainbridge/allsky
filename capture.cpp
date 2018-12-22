@@ -217,120 +217,81 @@ int main(int argc, char *argv[]) {
   if (argc > 0) {
     for (i = 0; i < argc - 1; i++) {
       if (strcmp(argv[i], "-h") == 0 || strcmp(argv[i], "-help") == 0) {
-        help = atoi(argv[i + 1]);
-        i++;
+        help = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-width") == 0) {
-        width = atoi(argv[i + 1]);
-        i++;
+        width = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-height") == 0) {
-        height = atoi(argv[i + 1]);
-        i++;
+        height = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-type") == 0) {
-        Image_type = atoi(argv[i + 1]);
-        i++;
+        Image_type = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-quality") == 0) {
-        quality[1] = atoi(argv[i + 1]);
-        i++;
+        quality[1] = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-exposure") == 0) {
-        asiExposure = atoi(argv[i + 1]) * 1000;
-        i++;
+        asiExposure = atoi(argv[++i]) * 1000;
       } else if (strcmp(argv[i], "-maxexposure") == 0) {
-        asiMaxExposure = atoi(argv[i + 1]);
-        i++;
+        asiMaxExposure = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-autoexposure") == 0) {
-        asiAutoExposure = atoi(argv[i + 1]);
-        i++;
+        asiAutoExposure = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-gain") == 0) {
-        asiGain = atoi(argv[i + 1]);
-        i++;
+        asiGain = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-maxgain") == 0) {
-        asiMaxGain = atoi(argv[i + 1]);
-        i++;
+        asiMaxGain = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-autogain") == 0) {
-        asiAutoGain = atoi(argv[i + 1]);
-        i++;
+        asiAutoGain = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-gamma") == 0) {
-        asiGamma = atoi(argv[i + 1]);
-        i++;
+        asiGamma = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-brightness") == 0) {
-        asiBrightness = atoi(argv[i + 1]);
-        i++;
+        asiBrightness = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-bin") == 0) {
-        bin = atoi(argv[i + 1]);
-        i++;
+        bin = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-delay") == 0) {
-        delay = atoi(argv[i + 1]);
-        i++;
+        delay = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-daytimeDelay") == 0) {
-        daytimeDelay = atoi(argv[i + 1]);
-        i++;
+        daytimeDelay = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-wbr") == 0) {
-        asiWBR = atoi(argv[i + 1]);
-        i++;
+        asiWBR = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-wbb") == 0) {
-        asiWBB = atoi(argv[i + 1]);
-        i++;
+        asiWBB = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-text") == 0) {
-        ImgText = (argv[i + 1]);
-        i++;
+        ImgText = (argv[++i]);
       } else if (strcmp(argv[i], "-textx") == 0) {
-        iTextX = atoi(argv[i + 1]);
-        i++;
+        iTextX = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-texty") == 0) {
-        iTextY = atoi(argv[i + 1]);
-        i++;
+        iTextY = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-fontname") == 0) {
-        fontnumber = atoi(argv[i + 1]);
-        i++;
+        fontnumber = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-fontcolor") == 0) {
-        fontcolor[0] = atoi(argv[i + 1]);
-        i++;
-        fontcolor[1] = atoi(argv[i + 1]);
-        i++;
-        fontcolor[2] = atoi(argv[i + 1]);
-        i++;
+        fontcolor[0] = atoi(argv[++i]);
+        fontcolor[1] = atoi(argv[++i]);
+        fontcolor[2] = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-fonttype") == 0) {
-        linenumber = atoi(argv[i + 1]);
-        i++;
+        linenumber = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-fontsize") == 0) {
-        fontsize = atof(argv[i + 1]);
-        i++;
+        fontsize = atof(argv[++i]);
       } else if (strcmp(argv[i], "-fontline") == 0) {
-        linewidth = atoi(argv[i + 1]);
-        i++;
+        linewidth = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-flip") == 0) {
-        asiFlip = atoi(argv[i + 1]);
-        i++;
+        asiFlip = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-usb") == 0) {
-        asiBandwidth = atoi(argv[i + 1]);
-        i++;
+        asiBandwidth = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-filename") == 0) {
-        fileName = (argv[i + 1]);
-        i++;
+        fileName = (argv[++i]);
       } else if (strcmp(argv[i], "-latitude") == 0) {
-        latitude = argv[i + 1];
-        i++;
+        latitude = argv[++i];
       } else if (strcmp(argv[i], "-longitude") == 0) {
-        longitude = argv[i + 1];
-        i++;
+        longitude = argv[++i];
       } else if (strcmp(argv[i], "-angle") == 0) {
-        angle = argv[i + 1];
-        i++;
+        angle = argv[++i];
       } else if (strcmp(argv[i], "-preview") == 0) {
-        preview = atoi(argv[i + 1]);
-        i++;
+        preview = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-time") == 0) {
-        time = atoi(argv[i + 1]);
-        i++;
+        time = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-darkframe") == 0) {
-        darkframe = atoi(argv[i + 1]);
-        i++;
+        darkframe = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-showDetails") == 0) {
-        showDetails = atoi(argv[i + 1]);
-        i++;
+        showDetails = atoi(argv[++i]);
       } else if (strcmp(argv[i], "-daytime") == 0) {
-        daytimeCapture = atoi(argv[i + 1]);
-        i++;
+        daytimeCapture = atoi(argv[++i]);
       }
     }
   }
